@@ -37,17 +37,17 @@
           class="w-full max-w-80 bg-base-100 shadow-2xs px-5 py-5 rounded-md"
         >
           <p class="text-[14px] font-medium text-[#323B49]">Total</p>
-          <h3 class="text-2xl font-bold text-[#002C5C]">8</h3>
+          <h3 id="total-job-count" class="text-2xl font-bold text-[#002C5C]">8</h3>
         </div>
         <div
           class="w-full max-w-80 bg-base-100 shadow-2xs px-5 py-5 rounded-md"
         >
           <p class="text-[14px] font-medium text-[#323B49]">Interview</p>
-          <h3 class="text-2xl font-bold text-[#10B981]">0</h3>
+          <h3 id="total-interview-count" class="text-2xl font-bold text-[#10B981]">0</h3>
         </div>
         <div class="w-full m-w-80 bg-base-100 shadow-2xs px-5 py-5 rounded-md">
           <p class="text-[14px] font-medium text-[#323B49]">Rejected</p>
-          <h3 class="text-2xl font-bold text-[#EF4444]">0</h3>
+          <h3 id="total-rejected-count" class="text-2xl font-bold text-[#EF4444]">0</h3>
         </div>
       </div>
     </header>
@@ -63,7 +63,7 @@
           <button class="btn bg-white text-[#64748B] w-20">Interview</button>
           <button class="btn bg-white text-[#64748B] w-20">Rejected</button>
         </div>
-        <div class="py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
+        <div class="job-card interview hidden py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
           <div class="flex justify-between items-center">
             <div class="">
               <h3 class="text-[18px] font-semibold">Mobile First Corp</h3>
@@ -94,7 +94,7 @@
             <button class="btn btn-outline btn-error">REJECTED</button>
           </div>
         </div>
-        <div class="py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
+        <div class="job-card interview py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
           <div class="flex justify-between items-center">
             <div class="">
               <h3 class="text-[18px] font-semibold">WebFlow Agency</h3>
@@ -125,7 +125,7 @@
             <button class="btn btn-outline btn-error">REJECTED</button>
           </div>
         </div>
-        <div class="py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
+        <div class="job-card rejected py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
           <div class="flex justify-between items-center">
             <div class="">
               <h3 class="text-[18px] font-semibold">DataViz Solutions</h3>
@@ -156,7 +156,7 @@
             <button class="btn btn-outline btn-error">REJECTED</button>
           </div>
         </div>
-        <div class="py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
+        <div class="job-card rejected py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
           <div class="flex justify-between items-center">
             <div class="">
               <h3 class="text-[18px] font-semibold">CloudFirst Inc</h3>
@@ -187,7 +187,7 @@
             <button class="btn btn-outline btn-error">REJECTED</button>
           </div>
         </div>
-        <div class="py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
+        <div class="job-card py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
           <div class="flex justify-between items-center">
             <div class="">
               <h3 class="text-[18px] font-semibold">Innovation Labs</h3>
@@ -219,7 +219,7 @@
             <button class="btn btn-outline btn-error">REJECTED</button>
           </div>
         </div>
-        <div class="py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
+        <div class="job-card py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
           <div class="flex justify-between items-center">
             <div class="">
               <h3 class="text-[18px] font-semibold">MegaCorp Solutions</h3>
@@ -251,7 +251,7 @@
             <button class="btn btn-outline btn-error">REJECTED</button>
           </div>
         </div>
-        <div class="py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
+        <div class="job-card py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
           <div class="flex justify-between items-center">
             <div class="">
               <h3 class="text-[18px] font-semibold">StartupXYZ</h3>
@@ -283,7 +283,7 @@
             <button class="btn btn-outline btn-error">REJECTED</button>
           </div>
         </div>
-        <div class="py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
+        <div class="job-card py-6 px-6 space-y-5 bg-base-100 rounded-lg shadow-sm">
           <div class="flex justify-between items-center">
             <div class="">
               <h3 class="text-[18px] font-semibold">TechCorp Industries</h3>
@@ -328,5 +328,6 @@
         </div>
       </div>
     </section>
+    <script src="Js/dashboardCount.js"></script>
   </body>
 </html>
