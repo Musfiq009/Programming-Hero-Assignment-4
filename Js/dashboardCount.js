@@ -3,7 +3,7 @@ function jobCount(jobCardCatagory) {
   let totalCount = 0;
   if (jobCardCatagory === "job-card") {
     for (let jobCard of jobCardElement) {
-      if (jobCard.classList.contains("hidden")) {
+      if (jobCard.classList.contains("deleted")) {
         continue;
       } else {
         totalCount++;
@@ -12,7 +12,7 @@ function jobCount(jobCardCatagory) {
     return String(totalCount);
   } else if (jobCardCatagory === "interview") {
     for (let jobCard of jobCardElement) {
-      if (jobCard.classList.contains("hidden")) {
+      if (jobCard.classList.contains("deleted")) {
         continue;
       } else {
         totalCount++;
@@ -21,7 +21,7 @@ function jobCount(jobCardCatagory) {
     return String(totalCount);
   } else if (jobCardCatagory === "rejected") {
     for (let jobCard of jobCardElement) {
-      if (jobCard.classList.contains("hidden")) {
+      if (jobCard.classList.contains("deleted")) {
         continue;
       } else {
         totalCount++;
